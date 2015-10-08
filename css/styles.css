@@ -1,0 +1,64 @@
+html {
+	height: 100%;
+}
+
+body {
+	font-family: "Open Sans",sans-serif;
+	margin:0;
+	padding:0;
+	height: 100%;
+}
+
+.main {
+	height: 100%;
+}
+
+.leftboard {
+	width: 240px;
+	background-color: #424F63;
+	height: 100%;
+}
+
+.logo {
+	height: 50px;
+}
+.logo img {
+	margin: 5px 0 0 20px;
+}
+
+.leftbar-menu > .navbar-list > li > a {
+	color: #fff;
+	font-size: 14px;
+	padding: 12px 20px 13px 20px;
+}
+
+.leftbar-menu > .navbar-list > li > a:hover {
+	background-color: #353F4F;
+	color: #65CEA7;
+}
+
+.leftbar-menu > .navbar-list > li > a  > i {
+	font-size: 16px;
+	margin-right: 10px;
+    text-align: center;
+    vertical-align: middle;
+    width: 16px;
+}
+
+.submenu-list {
+	display: block;
+	margin: 0 0 1px 0;
+}
+
+.submenu-list > li > a {
+	padding: 10px 5px 11px 50px;
+	color: #fff;
+	font-size: 13px;
+	background-color: #353F4F;
+}
+
+.submenu-list > li > a:hover,
+.submenu-list > li > a:focus {
+	background-color: #2A323F;
+	color: #65CEA7;
+}
