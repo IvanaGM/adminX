@@ -26,20 +26,35 @@ body {
 	margin: 5px 0 0 20px;
 }
 
-.menu-main {
-	padding: 0;
-	margin: 0;
+.leftbar-menu > .menu-main {
+	margin: -1px 0 0 0;
+	
+}
+
+.leftbar-menu > .menu-main > li {
+	margin: 1px;
+}
+
+.menu-main > .active > a:hover,
+.menu-main > .active > a:focus {
+	background-color: #2A323F;
+	color: #65CEA7;
 }
 
 .leftbar-menu > .menu-main > li > a {
+	background-color: #424F63;
 	color: #fff;
 	font-size: 14px;
-	padding: 12px 20px 12px 20px;
+	padding: 12px 20px 12px 19px;
+	margin: 0;
+	border-radius: 0;
 }
 
-.leftbar-menu > .menu-main > li > a:hover {
+.leftbar-menu > .menu-main > li > a:hover,
+.leftbar-menu > .menu-main > li > a:focus{
 	background-color: #353F4F;
 	color: #65CEA7;
+	outline: none;
 }
 
 .leftbar-menu > .menu-main > li > a  > i {
@@ -50,23 +65,27 @@ body {
     width: 16px;
 }
 
-.list-item {
-	margin: 0;
-	padding: 0;
-}
-
 .submenu-list {
 	padding: 0;
-	margin: 0 0 1px 0;
+	margin: 0;
+	min-height: 20px;
+}
+
+.submenu-list > .active > a,
+.submenu-list > .active > a:hover,
+.submenu-list > .active > a:focus {
+	background-color: #2A323F;
+	color: #65CEA7;
 }
 
 .submenu-list > li > a {
-	padding: 10px 5px 11px 50px;
+	padding: 11px 5px 11px 49px;
 	color: #fff;
 	font-size: 13px;
 	background-color: #353F4F;
 	display: block;
 	text-decoration: none;
+	margin-bottom: -1px;
 }
 
 .submenu-list > li > a:hover,
@@ -76,6 +95,12 @@ body {
 }
 
 .plus {
+	position: absolute;
+	left: 129px;
+	bottom: 11px;
 	margin: 0 0 0 86px;
 	font-weight: 900;
+	font-size: 15px;
 }
+
+
