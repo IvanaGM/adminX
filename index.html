@@ -26,17 +26,7 @@
 		<!-- Actual google font -->
 		<link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
 		
-		<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-		
-		<!-- more jQuery -->
-		<!-- <link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css"> -->
-		<script src="//code.jquery.com/jquery-1.10.2.js"></script>
-		<script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
-		<!-- <link rel="stylesheet" href="/resources/demos/style.css"> -->
-  
-		<!-- Include all compiled plugins (below), or include individual files as needed -->
-		<script src="js/bootstrap.min.js"></script>
+
 
 	</head>
 	
@@ -59,8 +49,6 @@
 							<a href="">
 								<i class="fa fa-home"></i>
 								<span>Dashboard</span>
-								<span class="plus">+</span>
-								<span class="minus">-</span>
 							</a>
 							<ul class="submenu-list">
 								<li>
@@ -75,7 +63,6 @@
 							<a href="">
 								<i class="fa fa-laptop"></i>
 								<span>Layouts</span>
-								<span class="plus">+</span>
 							</a>
 							<ul class="submenu-list">
 								<li>
@@ -96,7 +83,6 @@
 							<a href="">
 								<i class="fa fa-book"></i>
 								<span>UI Elements</span>
-								<span class="plus">+</span>
 							</a>
 							<ul class="submenu-list">
 								<li>
@@ -126,7 +112,6 @@
 							<a href="">
 								<i class="fa fa-cogs"></i>
 								<span>Components</span>
-								<span class="plus">+</span>
 							</a>
 							<ul class="submenu-list">
 								<li>
@@ -156,7 +141,6 @@
 							<a href="">
 								<i class="fa fa-envelope"></i>
 								<span>Mail</span>
-								<span class="plus">+</span>
 							</a>
 							<ul class="submenu-list">
 								<li>
@@ -174,7 +158,6 @@
 							<a href="">
 								<i class="fa fa-tasks"></i>
 								<span>Forms</span>
-								<span class="plus">+</span>
 							</a>
 							<ul class="submenu-list">
 								<li>
@@ -207,7 +190,6 @@
 							<a href="">
 								<i class="fa fa-bar-chart-o"></i>
 								<span>Charts</span>
-								<span class="plus">+</span>
 							</a>
 							<ul class="submenu-list">
 								<li>
@@ -228,7 +210,6 @@
 							<a href="">
 								<i class="fa fa-th-list"></i>
 								<span>Data Tables</span>
-								<span class="plus">+</span>
 							</a>
 							<ul class="submenu-list">
 								<li>
@@ -249,7 +230,6 @@
 							<a href="">
 								<i class="fa fa-map-marker"></i>
 								<span>Maps</span>
-								<span class="plus">+</span>
 							</a>
 							<ul class="submenu-list">
 								<li>
@@ -264,7 +244,6 @@
 							<a href="">
 								<i class="fa fa-file-text"></i>
 								<span>Extra Pages</span>
-								<span class="plus">+</span>
 							</a>
 							<ul class="submenu-list">
 								<li>
@@ -317,12 +296,25 @@
 							
 			</div>
 		</div>
-		
+
+		<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+		<!-- more jQuery -->
+		<!-- <link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css"> -->
+		<script src="//code.jquery.com/jquery-1.10.2.js"></script>
+		<script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+		<!-- <link rel="stylesheet" href="/resources/demos/style.css"> -->
+
+		<!-- Include all compiled plugins (below), or include individual files as needed -->
+		<script src="js/bootstrap.min.js"></script>
+
 		<script>
 			$(function() {
 				$( ".accordion" ).accordion({
 					collapsible: true,
-					heightStyle: "content"					
+					heightStyle: "content",
+
 				});
 				//capture the click on the a tag
 				$(".accordion .tab a").click(function() {
@@ -330,11 +322,15 @@
 					return false;
 				});				
 				//change plus to minus sign
-				$(".accordion li a").click(
-					function(){
-						$(".plus").hide("Blind");
-						$(".minus").show("Blind");
-				});
+				 //$(".accordion li a").click(function()
+				 //{
+
+					 //$(".plus").show();
+					 //$(".minus").hide();
+
+					  //$(this).find(".plus").hide();
+					  //$(this).find(".minus").show();
+				 //});
 			});
 	  
 		</script>		
