@@ -103,4 +103,11 @@ body {
 	font-size: 15px;
 }
 
-
+.minus {
+	position: absolute;
+	left: 129px;
+	bottom: 11px;
+	margin: 0 0 0 86px;
+	font-weight: 900;
+	font-size: 15px;
+}
