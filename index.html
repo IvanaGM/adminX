@@ -45,28 +45,28 @@
 				<div class="leftbar-menu">
 										
 					<ul class="nav nav-pills nav-stacked menu-main accordion">
-						<li class="list-item active">
+						<li class="list-item list-sign active">
 							<a href="">
 								<i class="fa fa-home"></i>
 								<span>Dashboard</span>
 							</a>
 							<ul class="submenu-list">
 								<li>
-									<a href=""> Dashboard 1</a>
+									<a href="http://adminex.themebucket.net/fontawesome.html"> Dashboard 1</a>
 								</li>
 								<li class="active">
 									<a href="index.html"> Dashboard 2</a>
 								</li>
 							</ul>
 						</li>
-						<li class="list-item">
+						<li class="list-item list-sign">
 							<a href="">
 								<i class="fa fa-laptop"></i>
 								<span>Layouts</span>
 							</a>
 							<ul class="submenu-list">
 								<li>
-									<a href="href=""> Blank Page</a>
+									<a href=""> Blank Page</a>
 								</li>
 								<li>
 									<a href=""> Boxed Page</a>
@@ -79,7 +79,7 @@
 								</li>
 							</ul>
 						</li>
-						<li class="list-item">
+						<li class="list-item list-sign">
 							<a href="">
 								<i class="fa fa-book"></i>
 								<span>UI Elements</span>
@@ -108,7 +108,7 @@
 								</li>								
 							</ul>
 						</li>
-						<li class="list-item">
+						<li class="list-item list-sign">
 							<a href="">
 								<i class="fa fa-cogs"></i>
 								<span>Components</span>
@@ -137,7 +137,7 @@
 								<span>Fontawesome</span>
 							</a>
 						</li>
-						<li class="list-item">
+						<li class="list-item list-sign">
 							<a href="">
 								<i class="fa fa-envelope"></i>
 								<span>Mail</span>
@@ -154,7 +154,7 @@
 								</li>								
 							</ul>
 						</li>
-						<li class="list-item">
+						<li class="list-item list-sign">
 							<a href="">
 								<i class="fa fa-tasks"></i>
 								<span>Forms</span>
@@ -186,7 +186,7 @@
 								</li>
 							</ul>
 						</li>
-						<li class="list-item">
+						<li class="list-item list-sign">
 							<a href="">
 								<i class="fa fa-bar-chart-o"></i>
 								<span>Charts</span>
@@ -206,7 +206,7 @@
 								</li>																								
 							</ul>
 						</li>
-						<li class="list-item">
+						<li class="list-item list-sign">
 							<a href="">
 								<i class="fa fa-th-list"></i>
 								<span>Data Tables</span>
@@ -226,7 +226,7 @@
 								</li>																								
 							</ul>
 						</li>
-						<li class="list-item">
+						<li class="list-item list-sign">
 							<a href="">
 								<i class="fa fa-map-marker"></i>
 								<span>Maps</span>
@@ -240,7 +240,7 @@
 								</li>																																
 							</ul>
 						</li>
-						<li class="list-item">
+						<li class="list-item list-sign">
 							<a href="">
 								<i class="fa fa-file-text"></i>
 								<span>Extra Pages</span>
@@ -291,7 +291,6 @@
 							</a>
 						</li>
 					</ul>					
-						
 				</div>
 							
 			</div>
@@ -331,7 +330,16 @@
 					  //$(this).find(".plus").hide();
 					  //$(this).find(".minus").show();
 				 //});
+				// forces lose focus when accordion section closed
+				$(".ui-accordion-header").click(function(){
+					$(this).blur();
+				});
 			});
+			
+			//$ (function() {
+				//$(".submenu-list li").click(function() {
+					//$(this).active();
+			//});
 	  
 		</script>		
 		

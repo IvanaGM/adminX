@@ -28,11 +28,25 @@ body {
 
 .leftbar-menu > .menu-main {
 	margin: -1px 0 0 0;
-	
+	padding: 0;	
 }
 
 .leftbar-menu > .menu-main > li {
-	margin: 1px;
+	margin: 1px 0 1px 0;	
+}
+
+.menu-main > .list-sign > a.ui-state-active {
+	background-color: #353F4F;
+	color: #65CEA7;
+}
+
+.leftbar-menu > .menu-main > li > a {
+	background-color: #424F63;
+	color: #fff;
+	font-size: 14px;
+	padding: 12px 20px 12px 20px;
+	margin: 0;
+	border-radius: 0;
 }
 
 .menu-main > .active > a:hover,
@@ -41,13 +55,20 @@ body {
 	color: #65CEA7;
 }
 
-.leftbar-menu > .menu-main > li > a {
+.menu-main > .list-sign > a.area-expanded:false {
 	background-color: #424F63;
-	color: #fff;
-	font-size: 14px;
-	padding: 12px 20px 12px 19px;
-	margin: 0;
-	border-radius: 0;
+}
+
+.menu-main > .list-sign > a:after {
+	font-family: FontAwesome;
+	content: "\f067";
+	font-size: 10px;
+	position: absolute;
+	right: 16px;
+	top: 15px;
+}
+.menu-main > .list-sign > a.ui-state-active:after {
+	content: "\f068";
 }
 
 .leftbar-menu > .menu-main > li > a:hover,
@@ -66,8 +87,8 @@ body {
 }
 
 .submenu-list {
-	padding: 0;
-	margin: 0;
+	padding: 0 0 1px 0;;
+	margin: 0 0 0 -1px;
 	min-height: 20px;
 }
 
@@ -79,7 +100,7 @@ body {
 }
 
 .submenu-list > li > a {
-	padding: 11px 5px 11px 49px;
+	padding: 11px 5px 11px 51px;
 	color: #fff;
 	font-size: 13px;
 	background-color: #353F4F;
@@ -94,14 +115,4 @@ body {
 	color: #65CEA7;
 }
 
-.menu-main > li > a:after {
-	font-family: FontAwesome;
-	content: "\f067";
-	font-size: 10px;
-	position: absolute;
-	right: 15px;
-	top: 15px;
-}
-.menu-main > li > a.ui-state-active:after {
-	content: "\f068";
-}
+
