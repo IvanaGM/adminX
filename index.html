@@ -307,6 +307,9 @@
 
 		<!-- Include all compiled plugins (below), or include individual files as needed -->
 		<script src="js/bootstrap.min.js"></script>
+		
+		<!-- for scroller -->
+		<script src="js/jquery.nicescroll.js"></script>
 
 		<script>
 			$(function() {
@@ -334,13 +337,13 @@
 				$(".ui-accordion-header").click(function(){
 					$(this).blur();
 				});
+				
+				//add scrolbar
+				$(document).ready(function() {  
+					$(".leftboard").niceScroll();
+				});
 			});
 			
-			//$ (function() {
-				//$(".submenu-list li").click(function() {
-					//$(this).active();
-			//});
-	  
 		</script>		
 		
 	</body>

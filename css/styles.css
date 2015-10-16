@@ -59,6 +59,7 @@ body {
 	background-color: #424F63;
 }
 
+/* add + and - icons from Font Awesome on accordion tab */
 .menu-main > .list-sign > a:after {
 	font-family: FontAwesome;
 	content: "\f067";
@@ -114,5 +115,11 @@ body {
 	background-color: #2A323F;
 	color: #65CEA7;
 }
+
+/* Insert scrollbar 
+.leftboard {
+    max-height:100%;
+    overflow-y:auto;  
+} */
 
 
