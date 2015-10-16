@@ -10,8 +10,7 @@
 	
 		<!-- Bootstrap -->
 		<link href="css/bootstrap.min.css" rel="stylesheet">
-		<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
-		
+
 		<!-- Font Awesome -->
 		<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
 	
@@ -294,6 +293,18 @@
 				</div>
 							
 			</div>
+
+			<div class="mainboard">
+				<div class="topbar">
+					<a class="toggle-btn">
+						<i class="fa fa-bars"></i>
+					</a>
+
+					<form class="searchbox">
+						<input class="search" type="text" placeholder="Search here...">
+					</form>
+				</div>
+			</div>
 		</div>
 
 		<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
@@ -312,7 +323,8 @@
 		<script src="js/jquery.nicescroll.js"></script>
 
 		<script>
-			$(function() {
+	//		$(function() {
+			$(document).ready(function(){
 				$( ".accordion" ).accordion({
 					collapsible: true,
 					heightStyle: "content",
@@ -340,10 +352,16 @@
 				
 				//add scrolbar
 				$(document).ready(function() {  
-					$(".leftboard").niceScroll();
+					$(".leftboard").niceScroll({
+						cursorcolor: 'rgb(101, 206, 167)',
+						cursorborderradius: '0px',
+						cursorborder: 'none',
+						cursorwidth: '3px'
+					});
 				});
 			});
-			
+//			});
+
 		</script>		
 		
 	</body>

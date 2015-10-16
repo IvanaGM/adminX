@@ -17,6 +17,7 @@ body {
 	width: 240px;
 	background-color: #424F63;
 	height: 100%;
+	float: left;
 }
 
 .logo {
@@ -98,6 +99,7 @@ body {
 .submenu-list > .active > a:focus {
 	background-color: #2A323F;
 	color: #65CEA7;
+	outline: none;
 }
 
 .submenu-list > li > a {
@@ -114,12 +116,36 @@ body {
 .submenu-list > li > a:focus {
 	background-color: #2A323F;
 	color: #65CEA7;
+	outline: none;
 }
 
-/* Insert scrollbar 
-.leftboard {
-    max-height:100%;
-    overflow-y:auto;  
-} */
+.toggle-btn {
+	float: left;
+	width: 52px;
+	height: 50px;
+	padding: 10px 0 0 15px;
+	font-size: 20px;
+	border-right: 1px solid #e7e7e7;
+	cursor: pointer;
+	color: #212121;
+}
+
+.toggle-btn:hover {
+	background-color: #65CEA7;
+	color: #fff;
+}
+
+.searchbox > .search {
+	border-radius: 4px;
+	height: 35px;
+	width: 220px;
+	float: left;
+	margin: 7px 0 0 10px;
+	padding: 10px;
+	font-size: 14px;
+	box-shadow: none;
+	border: 1px solid #ccc;
+}
+
 
 
