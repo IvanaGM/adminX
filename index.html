@@ -295,6 +295,7 @@
 			</div>
 
 			<div class="mainboard">
+				<div class="main-content">
 				<div class="topbar">
 					<a class="toggle-btn">
 						<i class="fa fa-bars"></i>
@@ -303,6 +304,39 @@
 					<form class="searchbox">
 						<input class="search" type="text" placeholder="Search here...">
 					</form>
+					
+					<ul class="nav nav-right">
+					
+						<li>
+							<button class="nav-text dropdown-toggle" data-toggle="dropdown">
+								<img src="images/johndoe.png">
+								<span class="user">John Doe</span>
+								<span class="caret"></span>			
+							</button>
+								<ul class="dropdown-menu dropdown-text">
+									<span class="caret"></span>
+									<li><a href="#">
+											<i class="fa fa-user"></i>
+											<span>Profile</span>
+										</a>
+									</li>
+									<li><a href="#">
+											<i class="fa fa-cog"></i>
+											<span>Settings</span>
+										</a>
+									</li>
+									<li><a href="#">
+											<i class="fa fa-sign-out"></i>
+											<span>Log Out</span>
+										</a>
+									</li>
+								</ul>
+						</li>
+					</ul>
+				</div>
+				
+				
+					
 				</div>
 			</div>
 		</div>
@@ -357,6 +391,15 @@
 						cursorborderradius: '0px',
 						cursorborder: 'none',
 						cursorwidth: '3px'
+					});
+					$(".mainboard").niceScroll({
+						cursorcolor: 'rgb(101, 206, 167)',
+						cursorborderradius: '0px',
+						cursorborder: 'none',
+						cursorwidth: '6px',
+						//change css for rail background
+						background: 'rgb (66, 79, 99)',
+						zindex: "1000"
 					});
 				});
 			});
