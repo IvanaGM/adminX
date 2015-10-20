@@ -161,41 +161,48 @@ body {
 .nav-right {
 	float: right;
 	margin-right: 15px;
-	height: 50px;	
+	height: 50px;
+	font-size: 0;
 }
 
-.dropdown-menu {
-	border-radius: 2px 0 2px 2px;
-	border: 0 none;
-	box-shadow: none;
+.nav-right > li {
+	display: inline;	
+}
+
+.nav-icon {
+	border-style: none;	
+	width: 45px;
+	height: 50px;
+	font-size: 16px;
+	padding: 12px 15px;	
+}
+
+.nav-icon:hover,
+.nav-icon:focus {
+	background-color: #424F63;
+	color: #65CEA7;
+}
+
+.dropdown-toggle > .badge {
+	background-color: #FF6C60;
+	border-radius: 2px;
+	font-size: 10px;
+	font-weight: normal;
 	position: absolute;
-	top: 48px;
-	left: -69px;
-	background-color: #65CEA7;
-	padding: 5px;
-}
-
-.dropdown-menu .caret {
-	display: inline-block;
-	width: 0;
-	height: 0;
-	margin-left: 5px;
-	vertical-align: middle;
-	border-bottom: 6px solid #65CEA7;
-	border-left: 6px solid transparent;
-	border-top: 0 dotted;
-	border-right: 6px solid transparent;
-	content: "";
-	position:absolute;
-	top:-6px;
-	right: 10px;
+    right: 4px;
+    top: -22px;
+	height: 17px;
+    min-width: 10px;	
+	vertical-align: baseline;	
+	padding: 4px 5px 0 5px;
+	text-align: center;
 }
 
 .nav-text {
-	border-style: none;
-	display: inline;
+	border-style: none;	
 	width: 131px;
-	height: 50px;	
+	height: 50px;
+	font-size: 14px;
 }
 
 .nav-text:hover,
@@ -215,8 +222,37 @@ body {
 	padding-right: 3px;
 }
 
+.dropdown-menu {
+	border-radius: 2px 0 2px 2px;
+	border: 0 none;
+	box-shadow: none;
+	position: absolute;
+	top: 18px;	
+	padding: 5px;
+}
+
+.dropdown-menu .caret {
+	display: inline-block;
+	width: 0;
+	height: 0;
+	margin-left: 5px;
+	vertical-align: middle;
+	border-bottom: 6px solid #65CEA7;
+	border-left: 6px solid transparent;
+	border-top: 0 dotted;
+	border-right: 6px solid transparent;
+	content: "";
+	position:absolute;
+	top:-6px;
+	right: 10px;
+}
+
 .dropdown-text {
 	min-width: 200px;
+	position: absolute;
+	top: 16px;
+	left: -69px;
+	background-color: #65CEA7;
 }
 
 .dropdown-text > li  > a {
@@ -237,6 +273,26 @@ body {
 	color: #fff;
 }
 
+.dropdown-icon {
+	min-width: 300px;
+	position: absolute;
+	top: 18px;
+	left: -255px;
+	margin: 0;
+	padding: 0;
+}
 
+.dropdown-element .dropdown-title {
+	background: #65CEA7 none repeat scroll 0 0;
+    color: #fff;
+    font-size: 11px;
+    margin: 0;
+    padding: 15px;
+	font-size: 12px;
+}
 
-
+div .user-image {
+	padding:15px 0 15px 5px;	
+	margin:0 10px 0 10px;
+	border-bottom:1px solid #eee;
+}
