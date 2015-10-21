@@ -291,8 +291,21 @@ body {
 	font-size: 12px;
 }
 
-div .user-image {
-	padding:15px 0 15px 5px;	
-	margin:0 10px 0 10px;
-	border-bottom:1px solid #eee;
+.user-image > a > img {
+	padding: 15px 0 15px 5px;	
+	margin: 0 10px 0 10px;
+	border-bottom: 1px solid #eee;
+	width: 40px;
+}
+
+div .user-name {
+	float: right;
+	position: relative;
+	top: -50px;
+	left: -38px;
+	
+}
+
+span .description {
+		float: right;
 }
