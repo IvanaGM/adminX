@@ -166,7 +166,7 @@ body {
 }
 
 .nav-right > li {
-	display: inline;	
+	display: inline-block;
 }
 
 .nav-icon {
@@ -174,7 +174,7 @@ body {
 	width: 45px;
 	height: 50px;
 	font-size: 16px;
-	padding: 12px 15px;	
+	padding: 12px 15px;
 }
 
 .nav-icon:hover,
@@ -190,7 +190,7 @@ body {
 	font-weight: normal;
 	position: absolute;
     right: 4px;
-    top: -22px;
+    top: 10px;
 	height: 17px;
     min-width: 10px;	
 	vertical-align: baseline;	
@@ -203,6 +203,9 @@ body {
 	width: 131px;
 	height: 50px;
 	font-size: 14px;
+	position: relative;
+	top: -3px;
+	
 }
 
 .nav-text:hover,
@@ -216,10 +219,12 @@ body {
 	height: auto;	
 	margin-right: 5px;
 	border-radius: 2px;
+	
 }
 
 .nav-text > .user {
-	padding-right: 3px;
+	padding: 0 3px 0 0;
+	margin-top: -20px;
 }
 
 .dropdown-menu {
@@ -304,8 +309,4 @@ div .user-name {
 	top: -50px;
 	left: -38px;
 	
-}
-
-span .description {
-		float: right;
 }
