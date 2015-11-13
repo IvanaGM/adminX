@@ -167,6 +167,9 @@ body {
 
 .nav-right > li {
 	display: inline-block;
+	margin: 0;
+	padding: 0;
+	vertical-align: top;
 }
 
 .nav-icon {
@@ -175,6 +178,7 @@ body {
 	height: 50px;
 	font-size: 16px;
 	padding: 12px 15px;
+	background-color: #fff;
 }
 
 .nav-icon:hover,
@@ -194,18 +198,17 @@ body {
 	height: 17px;
     min-width: 10px;	
 	vertical-align: baseline;	
-	padding: 4px 5px 0 5px;
+	padding: 4px 4.5px 0 4.5px;
 	text-align: center;
 }
 
 .nav-text {
 	border-style: none;	
-	width: 131px;
+	min-width: 131px;
 	height: 50px;
 	font-size: 14px;
-	position: relative;
-	top: -3px;
-	
+	padding: 2px 10px;
+	background-color: #fff;
 }
 
 .nav-text:hover,
@@ -223,16 +226,12 @@ body {
 
 .nav-text > .user {
 	padding: 0 3px 0 0;
-	margin-top: -20px;
 }
 
 .dropdown-menu {
 	border-radius: 2px 0 2px 2px;
 	border: 0 none;
 	box-shadow: none;
-	position: absolute;
-	top: 18px;
-	padding: 5px;
 }
 
 .dropdown-menu .caret {
@@ -254,7 +253,7 @@ body {
 .dropdown-text {
 	min-width: 200px;
 	position: absolute;
-	top: 16px;
+	top: 48px;
 	left: -69px;
 	background-color: #65CEA7;
 }
@@ -264,6 +263,7 @@ body {
 	border-radius: 2px;
 	padding: 7px 10px;
 	font-size: 13px;
+	margin: 0 5px 0 5px;
 }
 
 .dropdown-text > li  > a > i {
@@ -280,7 +280,7 @@ body {
 .dropdown-icon {
 	min-width: 300px;
 	position: absolute;
-	top: 18px;
+	top: 50px;
 	left: -255px;
 	margin: 0;
 	padding: 0;
@@ -296,10 +296,11 @@ body {
 }
 
 .user-image > a > img {
-	padding: 15px 0 15px 5px;	
+	padding: 15px 0 15px 6px;	
 	margin: 0 10px 0 10px;
 	border-bottom: 1px solid #eee;
-	width: 40px;
+	height: 67px;
+	width: auto;
 }
 
 div .user-name {
