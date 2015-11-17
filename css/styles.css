@@ -295,18 +295,63 @@ body {
 	font-size: 12px;
 }
 
-.user-image > a > img {
-	padding: 15px 0 15px 6px;	
-	margin: 0 10px 0 10px;
-	border-bottom: 1px solid #eee;
-	height: 67px;
-	width: auto;
+.dropdown-menu > .user-new {
+	padding: 15px;
+	border-width: 0 1px 1px 1px;
+	border-style: solid;
+	border-color: #eee;
 }
 
-div .user-name {
+.dropdown-menu > .user-new > a:hover {
+	background-color: #fff;
+}
+
+.dropdown-menu > .user-new > a {
+	margin: 0;
+	padding: 0;
+	height: 38px;
+}
+
+.dropdown-menu > .user-new > a > img {
+	padding-right: 10px;	
+	height: 36px;
+	width: auto;
+	float: left;
+}
+
+.name:hover {
+	color: #65cea7;
+}
+
+.name {
+	font-size: 13px;
+	color: #333;	
+	display: inline;	
+}
+
+.dropdown-menu > .user-new > a > .name > .badge {
+	background-color: #A9D86E;
 	float: right;
-	position: relative;
-	top: -50px;
-	left: -38px;
-	
+}
+
+.description {
+	font-size: 12px;
+	color: #999;
+	float: left;	
+}
+
+.all-users {
+	border-width: 0 1px 1px 1px;
+	border-style: solid;
+	border-color: #eee;
+	font-size: 13px;
+}
+
+.all-users > a:hover {
+	color: #65cea7 !important;
+	background-color: #fff !important;
+}
+
+.all-users > a {
+	padding: 11px 15px !important;
 }
