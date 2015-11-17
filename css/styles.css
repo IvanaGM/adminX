@@ -289,27 +289,43 @@ body {
 .dropdown-element .dropdown-title {
 	background: #65CEA7 none repeat scroll 0 0;
     color: #fff;
-    font-size: 11px;
     margin: 0;
     padding: 15px;
 	font-size: 12px;
 }
 
-.dropdown-menu > .user-new {
+.dropdown-menu > .user-new,
+.dropdown-menu > .notification,
+.dropdown-menu > .bars {
 	padding: 15px;
 	border-width: 0 1px 1px 1px;
 	border-style: solid;
 	border-color: #eee;
 }
 
-.dropdown-menu > .user-new > a:hover {
+.dropdown-menu > .user-new > a:hover,
+.dropdown-menu > .notification >a:hover,
+.dropdown-menu > .bars > a:hover {
 	background-color: #fff;
 }
 
-.dropdown-menu > .user-new > a {
+.dropdown-menu > .user-new > a,
+.dropdown-menu > .notification > a,
+.dropdown-menu > .bars > a {
 	margin: 0;
 	padding: 0;
+}
+
+.dropdown-menu > .user-new > a {
 	height: 38px;
+}
+
+.dropdown-menu > .notification > a {
+	height: 22px;
+}
+
+.dropdown-menu > .bars > a {
+	height: 40px;
 }
 
 .dropdown-menu > .user-new > a > img {
@@ -340,18 +356,39 @@ body {
 	float: left;	
 }
 
-.all-users {
+.bolt {
+	float: left;
+	margin-right: 10px;
+	padding: 2px 5px 3px 5px;
+	width: 20px;
+	background-color: #D9534F;
+	color: #fff;
+	font-size: 11px;
+	text-align: center;
+	vertical-align: baseline;
+	border-radius: 2px;
+}
+
+.italic-font {
+	font-size: 11px;
+}
+
+.progress {
+	margin: 0;
+}
+
+.dropdown-footer {
 	border-width: 0 1px 1px 1px;
 	border-style: solid;
 	border-color: #eee;
 	font-size: 13px;
 }
 
-.all-users > a:hover {
+.dropdown-footer > a:hover {
 	color: #65cea7 !important;
 	background-color: #fff !important;
 }
 
-.all-users > a {
+.dropdown-footer > a {
 	padding: 11px 15px !important;
 }
