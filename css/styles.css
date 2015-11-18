@@ -325,7 +325,26 @@ body {
 }
 
 .dropdown-menu > .bars > a {
-	height: 40px;
+	height: 35px;
+}
+
+.dropdown-menu > li > a > .bar-info {
+	font-size: 13px;
+}
+
+.progress-bar {
+    box-shadow: none;
+	-webkit-box-shadow: none;
+	-moz-box-shadow: none;
+    font-size: 11px;
+    padding-right: 10px;
+    text-align: right;
+	line-height: 15px;
+}
+
+.progress {
+	height: 15px;
+	margin: 0;
 }
 
 .dropdown-menu > .user-new > a > img {
@@ -342,7 +361,8 @@ body {
 .name {
 	font-size: 13px;
 	color: #333;	
-	display: inline;	
+	display: inline;
+	line-height: normal;
 }
 
 .dropdown-menu > .user-new > a > .name > .badge {
@@ -371,10 +391,6 @@ body {
 
 .italic-font {
 	font-size: 11px;
-}
-
-.progress {
-	margin: 0;
 }
 
 .dropdown-footer {
