@@ -120,6 +120,7 @@ body {
 }
 
 /* mainboard */
+/* right side menu */
 .mainboard {
 	height: 100%;	
 	background-color: #EFF0F4;
@@ -197,7 +198,7 @@ body {
     top: 10px;
 	height: 17px;
     min-width: 10px;	
-	vertical-align: baseline;	
+	vertical-align: middle;	
 	padding: 4px 4.5px 0 4.5px;
 	text-align: center;
 }
@@ -304,9 +305,10 @@ body {
 }
 
 .dropdown-menu > .user-new > a:hover,
-.dropdown-menu > .notification >a:hover,
+.dropdown-menu > .notification > a:hover,
 .dropdown-menu > .bars > a:hover {
 	background-color: #fff;
+	color: #65cea7 !important;
 }
 
 .dropdown-menu > .user-new > a,
@@ -316,28 +318,32 @@ body {
 	padding: 0;
 }
 
-.dropdown-menu > .user-new > a {
-	height: 38px;
-}
-
-.dropdown-menu > .notification > a {
-	height: 22px;
-}
-
-.dropdown-menu > .bars > a {
-	height: 35px;
-}
-
 .dropdown-menu > li > a > .bar-info {
 	font-size: 13px;
 }
 
-.progress-bar {
+.dropdown-menu > .bars > a {
+	height: 34px;
+	margin-top: 1px;
+}
+
+.dropdown-menu > .user-new > a {
+	vertical-align:	middle;
+	height: 37px;
+	margin-top: 1px;
+}
+
+.dropdown-menu > .notification > a {
+	height: 22px;
+	vertical-align: middle;
+}
+
+.progress > .progress-bar {
     box-shadow: none;
 	-webkit-box-shadow: none;
 	-moz-box-shadow: none;
     font-size: 11px;
-    padding-right: 10px;
+    padding: 1px 10px 0 0;
     text-align: right;
 	line-height: 15px;
 }
@@ -345,13 +351,17 @@ body {
 .progress {
 	height: 15px;
 	margin: 0;
+	background-color: #F0F2F7;
+	-webkit-box-shadow: none;
+	box-shadow: none;
 }
 
 .dropdown-menu > .user-new > a > img {
-	padding-right: 10px;	
+	padding-right: 9px;	
 	height: 36px;
 	width: auto;
 	float: left;
+	margin-top: -1px;
 }
 
 .name:hover {
@@ -368,6 +378,9 @@ body {
 .dropdown-menu > .user-new > a > .name > .badge {
 	background-color: #A9D86E;
 	float: right;
+	position: relative;
+	top: -21px;
+	letter-spacing: 0.025em;
 }
 
 .description {
@@ -389,8 +402,13 @@ body {
 	border-radius: 2px;
 }
 
+.notification > a > .bolt > i {
+	margin: 0;
+	padding: 0;
+}
+
 .italic-font {
-	font-size: 11px;
+	font-size: 0.75em;
 }
 
 .dropdown-footer {
@@ -408,3 +426,10 @@ body {
 .dropdown-footer > a {
 	padding: 11px 15px !important;
 }
+
+/* main content */
+
+.main-content {
+	padding: 15px;
+}
+
