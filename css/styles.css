@@ -378,15 +378,17 @@ body {
 .dropdown-menu > .user-new > a > .name > .badge {
 	background-color: #A9D86E;
 	float: right;
-	position: relative;
-	top: -21px;
+	position: absolute;
+	top: 58px;
+	right: 16px;
 	letter-spacing: 0.025em;
 }
 
 .description {
 	font-size: 12px;
 	color: #999;
-	float: left;	
+	float: left;
+	padding-right: 20px;
 }
 
 .bolt {
@@ -428,8 +430,142 @@ body {
 }
 
 /* main content */
-
 .main-content {
 	padding: 15px;
 }
 
+.upper-four-boxes > .col-md-3 > .box {
+	margin-bottom: 20px;
+} 
+
+.box > .box-body > .row > .col-xs-4 > i {
+	font-size: 50px;
+	position: relative;
+	top: -1px;
+}
+
+.box {
+	color: #fff;
+	padding: 15px;
+	border-radius: 4px;
+}
+
+.red-box {
+	background-color: #FC8675;
+}
+
+.blue-box {
+	background-color: #5AB6DF;
+}
+
+.green-box {
+	background-color: #65CEA7;
+}
+
+.yellow-box {
+	background-color: #EBC85E;
+}
+
+.box > .box-body > .row  {
+	vertical-align: 1;
+}
+
+.box > .box-body > .row > .col-xs-8 > h4 {
+	margin-bottom: 0;
+}
+
+.box-title {
+	font-size: 13px;
+}
+
+.white-box {
+	background-color: #fff;
+}
+
+.box-header {
+	color: #535351;
+	text-transform: uppercase;
+	font-weight: bold;
+	border-bottom: 1px doted rgba(0, 0, 0, 0.2);
+}
+
+.tools {
+	float: right;
+	margin: -7px -5px 0 0;
+}
+
+.box-header > .tools > a {
+	padding: 10px;
+	margin-left: 2px;
+	background: #e3e4e8 none repeat scroll 0 0;
+	border-radius: 3px;
+	color: #858582;
+	float: left;
+}
+
+.box-header > .tools > a:hover {
+	background-color: #65CEA7;
+	color: #fff;
+	text-decoration: none;
+}
+
+.picture-section > img {
+	height: 380px;
+	width: 100%;
+	border-radius: 4px 4px 0 0;
+}
+
+.social-btn {
+	position: absolute;
+	top: 20px;
+	left: 35px;
+	z-index: 1;
+	font-size: 12px;	
+}
+
+.social-btn > a {
+	color: #fff;
+	border-radius: 50%;
+	border: 2px solid #fff;
+	display: inline-block;
+	width: 28px;
+	height: 28px;
+	text-align: center;
+	margin: 0 1px;
+	line-height: 24px;
+}
+
+.social-btn > a:hover {
+	color: #6DDFB5;
+	border-color: #6DDFB5;
+}
+
+.large-profile > .picture-section  > .profile-menu {	
+	list-style-type: none;
+	height: 100%;
+	background: rgba(0, 0, 0, 0.5) none repeat scroll 0 0;
+	border-radius: 0 4px 4px 0;
+	position: absolute;
+	top: 0px;
+	right: 15px;
+	z-index: 1;
+	
+}
+
+.info-section {
+	background-color: #424f63;
+	color: #fff;
+	padding: 10px 10px 11px 10px;
+	border-radius: 0 0 4px 4px;
+	position: relative;
+	z-index: 10;
+}
+
+.info-section > h5 {
+	margin: 0;
+	font-size: 15px;
+}
+
+.info-section > span {
+	font-size: 11px;
+}
