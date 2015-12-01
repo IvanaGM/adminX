@@ -480,13 +480,17 @@ body {
 
 .white-box {
 	background-color: #fff;
+	border-radius: 4px;
+	height: 438px;
+	margin-bottom: 15px;
 }
 
 .box-header {
 	color: #535351;
 	text-transform: uppercase;
 	font-weight: bold;
-	border-bottom: 1px doted rgba(0, 0, 0, 0.2);
+	border-bottom: 1px dotted #e3e4e8;
+	padding: 15px;
 }
 
 .tools {
