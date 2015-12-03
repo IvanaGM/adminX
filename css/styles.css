@@ -598,6 +598,6 @@ body {
 	font-size: 11px;
 }
 
-.3wheel-picture-post {
+.picture-part > img {
 	width: 100%;
 }
